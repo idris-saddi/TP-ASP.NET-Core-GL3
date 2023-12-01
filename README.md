@@ -1,2 +1,2 @@
 # TP-ASP.NET-GL3
-this a project that have been made to in the first 4 lab session in dotNET module in my cursus as Software Engineering Student @ INSAT
+this is a project that was made in the first 4 lab sessions in the dotNET module in my courses as a Software Engineering Student @ INSAT
