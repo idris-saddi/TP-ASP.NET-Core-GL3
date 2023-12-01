@@ -1,4 +1,4 @@
-# TP-ASP.NET-GL3
+# TP ASP.NET Core GL3
 This is a project that was made in the first 4 lab sessions in the dotNET module in my courses as a Software Engineering Student @INSAT
 
 For the Design, I used Bootswatch **Sketchy** Theme
