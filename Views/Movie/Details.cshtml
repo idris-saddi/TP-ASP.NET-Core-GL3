@@ -1,0 +1,53 @@
+@model TP1.Models.Movie
+
+@{
+    ViewData["Title"] = "Details";
+
+    var defaultGenre = new Genre();
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Movie</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Poster)
+        </dt>
+        <dd class="col-sm-10">
+            @if (!string.IsNullOrEmpty(@Model.Poster))
+            {
+                <img src="/@Model.Poster" alt="Poster" style="max-height: 10rem; max-width: 10rem;">
+            }
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Released)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Released)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Added)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Added)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => (model.Genre ?? defaultGenre).Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

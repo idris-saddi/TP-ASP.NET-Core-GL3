@@ -1,0 +1,23 @@
+[
+    {
+        "Id": "84ca0bcd-082c-49cb-aa77-ea2f1f566285",
+        "Name": "Pro",
+        "SignUpFee": 100,
+        "DurationInMonths": 12,
+        "DiscountRate": 20
+    },
+    {
+        "Id": "79e6f638-d7e7-4f63-8365-f1744b925381",
+        "Name": "Plus",
+        "SignUpFee": 10,
+        "DurationInMonths": 1,
+        "DiscountRate": 10
+    },
+    {
+        "Id": "79e6f638-d7e7-4f63-8365-f1f44b9a5381",
+        "Name": "Simple",
+        "SignUpFee": 0,
+        "DurationInMonths": 36,
+        "DiscountRate": 0
+    }
+]
